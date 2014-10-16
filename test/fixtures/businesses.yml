@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  BusinessName: MyString
+  BusinessType: MyString
+  BusinessPhone: MyString
+  CityListingId: 1
+  CreatedBy: MyString
+  CreatedDate: 2014-10-09 13:44:19
+
+two:
+  BusinessName: MyString
+  BusinessType: MyString
+  BusinessPhone: MyString
+  CityListingId: 1
+  CreatedBy: MyString
+  CreatedDate: 2014-10-09 13:44:19

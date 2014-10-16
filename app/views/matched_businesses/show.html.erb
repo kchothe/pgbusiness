@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Contact phone:</strong>
+  <%= @matched_business.contact_phone_id %>
+</p>
+
+<p>
+  <strong>Business:</strong>
+  <%= @matched_business.business_id %>
+</p>
+
+<p>
+  <strong>Isrecommended:</strong>
+  <%= @matched_business.IsRecommended %>
+</p>
+
+<p>
+  <strong>Createdby:</strong>
+  <%= @matched_business.CreatedBy %>
+</p>
+
+<p>
+  <strong>Createddate:</strong>
+  <%= @matched_business.CreatedDate %>
+</p>
+
+<p>
+  <strong>Modifiedby:</strong>
+  <%= @matched_business.ModifiedBy %>
+</p>
+
+<p>
+  <strong>Modifieddate:</strong>
+  <%= @matched_business.ModifiedDate %>
+</p>
+
+<%= link_to 'Edit', edit_matched_business_path(@matched_business) %> |
+<%= link_to 'Back', matched_businesses_path %>

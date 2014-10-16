@@ -1,0 +1,45 @@
+<%= form_for(@matched_business) do |f| %>
+  <% if @matched_business.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@matched_business.errors.count, "error") %> prohibited this matched_business from being saved:</h2>
+
+      <ul>
+      <% @matched_business.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :contact_phone_id %><br>
+    <%= f.number_field :contact_phone_id %>
+  </div>
+  <div class="field">
+    <%= f.label :business_id %><br>
+    <%= f.number_field :business_id %>
+  </div>
+  <div class="field">
+    <%= f.label :IsRecommended %><br>
+    <%= f.check_box :IsRecommended %>
+  </div>
+  <div class="field">
+    <%= f.label :CreatedBy %><br>
+    <%= f.text_field :CreatedBy %>
+  </div>
+  <div class="field">
+    <%= f.label :CreatedDate %><br>
+    <%= f.datetime_select :CreatedDate %>
+  </div>
+  <div class="field">
+    <%= f.label :ModifiedBy %><br>
+    <%= f.text_field :ModifiedBy %>
+  </div>
+  <div class="field">
+    <%= f.label :ModifiedDate %><br>
+    <%= f.datetime_select :ModifiedDate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

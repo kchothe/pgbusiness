@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  UserPhoneNumber: MyString
+  OEMId: MyString
+  OS: MyString
+  Lat: 9.99
+  Lng: 9.99
+  CreatedBy: MyString
+  CreatedDate: 2014-10-09 12:53:13
+  ModifiedBy: MyString
+  ModifiedDate: 2014-10-09 12:53:13
+
+two:
+  UserPhoneNumber: MyString
+  OEMId: MyString
+  OS: MyString
+  Lat: 9.99
+  Lng: 9.99
+  CreatedBy: MyString
+  CreatedDate: 2014-10-09 12:53:13
+  ModifiedBy: MyString
+  ModifiedDate: 2014-10-09 12:53:13

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ContactName: MyString
+  CreatedBy: MyString
+  CreatedDate: 2014-10-09 13:12:32
+  ModifiedBy: MyString
+  ModifiedDate: 2014-10-09 13:12:32
+
+two:
+  ContactName: MyString
+  CreatedBy: MyString
+  CreatedDate: 2014-10-09 13:12:32
+  ModifiedBy: MyString
+  ModifiedDate: 2014-10-09 13:12:32

@@ -1,0 +1,47 @@
+<%= form_for(@device) do |f| %>
+  <% if @device.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@device.errors.count, "error") %> prohibited this device from being saved:</h2>
+
+      <ul>
+      <% @device.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :UserPhoneNumber %><br>
+    <%= f.text_field :UserPhoneNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :OEMId %><br>
+    <%= f.text_field :OEMId %>
+  </div>
+  <div class="field">
+    <%= f.label :OS %><br>
+    <%= f.text_field :OS %>
+  </div>
+  <div class="field">
+    <%= f.label :Lat %><br>
+    <%= f.text_field :Lat %>
+  </div>
+  <div class="field">
+    <%= f.label :Lng %><br>
+    <%= f.text_field :Lng %>
+  </div>
+  <div class="field">
+    <%= f.label :CreatedBy %><br>
+    <%= f.text_field :CreatedBy %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :ModifiedBy %><br>
+    <%= f.text_field :ModifiedBy %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

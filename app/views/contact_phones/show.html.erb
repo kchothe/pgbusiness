@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Phonenumber:</strong>
+  <%= @contact_phone.PhoneNumber %>
+</p>
+
+<p>
+  <strong>Phonenumbertype:</strong>
+  <%= @contact_phone.PhoneNumberType %>
+</p>
+
+<p>
+  <strong>Createdby:</strong>
+  <%= @contact_phone.CreatedBy %>
+</p>
+
+<p>
+  <strong>Createddate:</strong>
+  <%= @contact_phone.CreatedDate %>
+</p>
+
+<p>
+  <strong>Modifiedby:</strong>
+  <%= @contact_phone.ModifiedBy %>
+</p>
+
+<p>
+  <strong>Modifieddate:</strong>
+  <%= @contact_phone.ModifiedDate %>
+</p>
+
+<%= link_to 'Edit', edit_contact_phone_path(@contact_phone) %> |
+<%= link_to 'Back', contact_phones_path %>

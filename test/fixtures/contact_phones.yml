@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PhoneNumber: MyString
+  PhoneNumberType: MyString
+  CreatedBy: MyString
+  CreatedDate: 2014-10-09 13:33:37
+  ModifiedBy: MyString
+  ModifiedDate: 2014-10-09 13:33:37
+
+two:
+  PhoneNumber: MyString
+  PhoneNumberType: MyString
+  CreatedBy: MyString
+  CreatedDate: 2014-10-09 13:33:37
+  ModifiedBy: MyString
+  ModifiedDate: 2014-10-09 13:33:37

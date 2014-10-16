@@ -1,0 +1,41 @@
+<%= form_for(@contact_phone) do |f| %>
+  <% if @contact_phone.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@contact_phone.errors.count, "error") %> prohibited this contact_phone from being saved:</h2>
+
+      <ul>
+      <% @contact_phone.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PhoneNumber %><br>
+    <%= f.text_field :PhoneNumber %>
+  </div>
+  <div class="field">
+    <%= f.label :PhoneNumberType %><br>
+    <%= f.text_field :PhoneNumberType %>
+  </div>
+  <div class="field">
+    <%= f.label :CreatedBy %><br>
+    <%= f.text_field :CreatedBy %>
+  </div>
+  <div class="field">
+    <%= f.label :CreatedDate %><br>
+    <%= f.datetime_select :CreatedDate %>
+  </div>
+  <div class="field">
+    <%= f.label :ModifiedBy %><br>
+    <%= f.text_field :ModifiedBy %>
+  </div>
+  <div class="field">
+    <%= f.label :ModifiedDate %><br>
+    <%= f.datetime_select :ModifiedDate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
