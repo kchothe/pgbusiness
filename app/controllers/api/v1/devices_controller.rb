@@ -1,12 +1,10 @@
 class Api::V1::DevicesController < Api::V1::ApiController
-	
 	def index
 		@devices = Device.all
 		render json: @devices
 	end
 
 	def create
-    # binding.pry
     @oemid = Device.find_by(OEMId: params[:OEMID])
     @userphonenumber = Device.find_by(UserPhoneNumber: params[:UserPhoneNumber])
         

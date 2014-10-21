@@ -1,12 +1,10 @@
 class Api::V1::BusinessesController < Api::V1::ApiController
-	
 	def index
 		@businesses = Business.all
 		render json: @businesses
 	end
 
 	def create
-    # binding.pry
     session[:device_id] = nil
     set_device_id
     @device = Device.find(session[:device_id])
@@ -23,9 +21,7 @@ class Api::V1::BusinessesController < Api::V1::ApiController
         @business.CreatedBy = @device.UserPhoneNumber
         @business.save
       end
-
       @phonenumber = ContactPhone.find_by(PhoneNumber: @business.BusinessPhone)
-
       @business_contact = BusinessContactPhone.new
       @business_contact.business_id = @business.id
       @business_contact.contact_phone_id = @phonenumber.id
@@ -33,7 +29,6 @@ class Api::V1::BusinessesController < Api::V1::ApiController
       @business_contact.CreatedBy = @device.UserPhoneNumber
       @business_contact.ModifiedBy = @device.UserPhoneNumber
       @business_contact.save
-      
     end
   end
 
